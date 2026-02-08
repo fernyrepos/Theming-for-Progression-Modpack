@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <SoundDef>
+    <defName>ProgressionWelcome</defName>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ProgressionWelcome</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+
+  <SoundDef>
+    <defName>ProgressionPopup</defName>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ProgressionPopup</clipPath>
+          </li>
+        </grains>
+        <volumeRange>40</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

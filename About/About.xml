@@ -8,11 +8,20 @@
 		<li>1.6</li>
 	</supportedVersions>
 	<description>For the modpack.</description>
+	<modDependencies>
+		<li>
+			<packageId>ferny.popupframework</packageId>
+			<displayName>Popup Framework</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3654537815</steamWorkshopUrl>
+		</li>
+	</modDependencies>
 	<loadAfter>
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
 		<li>Ludeon.Rimworld.Ideology</li>
 		<li>Ludeon.Rimworld.Biotech</li>
 		<li>Ludeon.Rimworld.Anomaly</li>
+		<li>Ludeon.Rimworld.Odyssey</li>
+		<li>ferny.popupframework</li>
 	</loadAfter>
 </ModMetaData>

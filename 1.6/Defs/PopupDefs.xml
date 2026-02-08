@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+
+<!-- GAME STARTUP -->
+
+<!-- 1. Launch successful -->
+<PopupFramework.PopupDef>
+	<defName>ProgressionGameStartPopup1</defName>
+	<title>Launch successful!</title>
+	<description>
+&lt;color=#8ECbFF&gt;&lt;b&gt;Welcome to the Progression Modpack!&lt;/b&gt;&lt;/color&gt;
+\n
+&lt;size=25&gt;&lt;b&gt;Ready to start!&lt;/b&gt;&lt;/size&gt;
+\n
+You made it, the modpack has booted successfully. Thanks for sticking through the loading process. If you're seeing this popup, everything is now fully initialized and ready. Click next to learn some integral aspects of the modpack.
+\n\n
+This series of messages will only appear on your first launch. If you&#39;d ever like to view them again, you can reset your popup knowledge in the &lt;b&gt;Popup Framework&lt;/b&gt; mod options.
+	</description>
+	<iconPath>Tutor/ProgressionLogo</iconPath>
+	<imageRatio>0.4</imageRatio>
+	<dimensions>(988, 620)</dimensions>
+	<orientationStyle>Center</orientationStyle>
+	<closeable>true</closeable>
+	<oneTime>true</oneTime>
+	<nextPopupDef>ProgressionGameStartPopup2</nextPopupDef>
+	<saveToClient>true</saveToClient>
+	<trigger>OnGameStartup</trigger>
+</PopupFramework.PopupDef>
+
+
+<!-- 2. Loading times -->
+<PopupFramework.PopupDef>
+	<defName>ProgressionGameStartPopup2</defName>
+	<title>Loading times</title>
+	<description>
+&lt;b&gt;About startup time&lt;/b&gt;
+\n
+&lt;size=18&gt;Don't be alarmed. Depending on your system, startup load times can range from roughly &lt;b&gt;7 to 50 minutes&lt;/b&gt;.&lt;/size&gt;
+\n
+Most players on mid-range hardware should expect something closer to &lt;b&gt;20–25 minutes&lt;/b&gt;. This is normal, and will occur every time you launch the game.
+The speed of loading is based primarily on single-core CPU performance and SSD speeds.
+\n
+Ensure RimWorld and its Workshop content are installed on an SSD. If long load times are an issue, upgrading your CPU (single-core speed) will have the biggest impact.
+	</description>
+	<iconPath>Tutor/LoadingScreen</iconPath>
+	<dimensions>(988, 620)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<closeable>false</closeable>
+	<oneTime>true</oneTime>
+	<previousPopupDef>ProgressionGameStartPopup1</previousPopupDef>
+	<nextPopupDef>ProgressionGameStartPopup3</nextPopupDef>
+	<saveToClient>true</saveToClient>
+	<trigger>None</trigger>
+	<sound>ProgressionPopup</sound>
+</PopupFramework.PopupDef>
+
+
+<!-- 3. Outdated mods -->
+<PopupFramework.PopupDef>
+	<defName>ProgressionGameStartPopup3</defName>
+	<title>Mods reporting "outdated"</title>
+	<description>
+&lt;b&gt;About &quot;outdated&quot; mod warnings&lt;/b&gt;
+\n
+&lt;size=18&gt;Some mods may show as being for older RimWorld versions. This is &lt;b&gt;normal&lt;/b&gt; and usually just means the author hasn&#39;t updated the mod&#39;s metadata.&lt;/size&gt;
+\n
+Many of these are simple retextures or XML-only changes, which often continue working fine across versions without needing an update.
+\n
+If it looks a little scary, don&#39;t worry. This modpack is curated for a stable, high-quality experience, even when a mod&#39;s metadata hasn&#39;t caught up.
+	</description>
+	<iconPath>Tutor/OutdatedMods</iconPath>
+	<dimensions>(988, 620)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<closeable>false</closeable>
+	<oneTime>true</oneTime>
+	<previousPopupDef>ProgressionGameStartPopup2</previousPopupDef>
+	<nextPopupDef>ProgressionGameStartPopup4</nextPopupDef>
+	<saveToClient>true</saveToClient>
+	<trigger>None</trigger>
+	<sound>ProgressionPopup</sound>
+</PopupFramework.PopupDef>
+
+
+<!-- 4. Updating the modpack -->
+<PopupFramework.PopupDef>
+	<defName>ProgressionGameStartPopup4</defName>
+	<title>Updating the modpack</title>
+	<description>
+&lt;b&gt;A word on modpack updates&lt;/b&gt;
+\n
+&lt;size=18&gt;The modpack does not update automatically. Updates can be applied manually using the same steps you followed during installation.&lt;/size&gt;
+\n
+An easier option is to follow the &lt;b&gt;#pack-updates&lt;/b&gt; channel on Discord and choose which updates you&#39;d like to apply at your own discretion.
+\n
+When updating mid-save, there is one important rule to understand: &lt;b&gt;adding mods is usually safe&lt;/b&gt;, but &lt;b&gt;removing mods mid-save is very likely to break your save&lt;/b&gt;.
+If you plan to update an existing save, it&#39;s strongly recommended that you only add mods. Save-breaking removals should be reserved for starting a new colony.
+	</description>
+	<iconPath>Tutor/Updating</iconPath>
+	<dimensions>(988, 620)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<closeable>false</closeable>
+	<oneTime>true</oneTime>
+	<previousPopupDef>ProgressionGameStartPopup3</previousPopupDef>
+	<nextPopupDef>ProgressionGameStartPopup5</nextPopupDef>
+	<saveToClient>true</saveToClient>
+	<trigger>None</trigger>
+	<sound>ProgressionPopup</sound>
+</PopupFramework.PopupDef>
+
+
+<!-- 5. Discord / More questions -->
+<PopupFramework.PopupDef>
+	<defName>ProgressionGameStartPopup5</defName>
+	<title>More questions?</title>
+	<description>
+&lt;b&gt;Need help or want to track modpack updates?&lt;/b&gt;
+\n\n
+Our Discord server is a casual, non-judgmental space focused on helping newcomers and sharing modding knowledge.
+\n\n
+You&#39;ll be joining &lt;b&gt;10,000+&lt;/b&gt; other users. Ask questions, lurk, or track the progress of the modpack. whatever works for you.
+	</description>
+	<iconPath>Tutor/Discord</iconPath>
+	<dimensions>(988, 620)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<closeable>false</closeable>
+	<oneTime>true</oneTime>
+	<previousPopupDef>ProgressionGameStartPopup4</previousPopupDef>
+	<nextPopupDef>ProgressionGameStartPopup6</nextPopupDef>
+	<customButtonLabel>Join Discord</customButtonLabel>
+	<customButtonWebLink>https://discord.gg/b58NcrzxRS</customButtonWebLink>
+	<saveToClient>true</saveToClient>
+	<trigger>None</trigger>
+	<sound>ProgressionPopup</sound>
+</PopupFramework.PopupDef>
+
+
+<!-- 6. Harmless startup errors -->
+<PopupFramework.PopupDef>
+	<defName>ProgressionGameStartPopup6</defName>
+	<title>Harmless startup errors</title>
+	<description>
+&lt;size=20&gt;&lt;b&gt;Don&#39;t stress. Your game's not broken silly!&lt;/b&gt;&lt;/size&gt;
+\n
+&lt;size=18&gt;When you close this popup, you may notice red error messages appear in the log. This is &lt;b&gt;normal&lt;/b&gt; during a fresh startup of the modpack and is primarily used by the developers for debugging and tracking edge cases.&lt;/size&gt;
+\n
+All known startup errors have been reviewed by the community and are either confirmed to be harmless or actively being worked on. None of them indicate a broken or unstable experience. Feel free to ignore them and just play the game.	</description>
+	<iconPath>Tutor/Errors</iconPath>
+	<dimensions>(988, 620)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<closeable>false</closeable>
+	<oneTime>true</oneTime>
+	<previousPopupDef>ProgressionGameStartPopup5</previousPopupDef>
+	<nextPopupDef>ProgressionGameStartPopup7</nextPopupDef>
+	<saveToClient>true</saveToClient>
+	<trigger>None</trigger>
+	<sound>ProgressionPopup</sound>
+</PopupFramework.PopupDef>
+
+<!-- 7. Thanks -->
+<PopupFramework.PopupDef>
+	<defName>ProgressionGameStartPopup7</defName>
+	<title>&lt;size=20&gt;&lt;color=#4FA6FF&gt;&lt;b&gt;Setup complete!&lt;/b&gt;&lt;/color&gt;&lt;/size&gt;</title>
+	<description>
+&lt;size=18&gt;&lt;b&gt;                                                                            You&#39;re all set.&lt;/b&gt;&lt;/size&gt;
+&lt;size=14&gt;                                            You have now been fully briefed on the basics of the &lt;b&gt;Progression Modpack&lt;/b&gt;.&lt;/size&gt;
+&lt;size=14&gt;                    If you ever want to revisit this information, you can reset your popup knowledge in the &lt;b&gt;Popup Framework&lt;/b&gt; mod settings.&lt;/size&gt;
+&lt;size=18&gt;&lt;b&gt;                                                                       Enjoy your stories!&lt;/b&gt;&lt;/size&gt;
+	</description>
+	<iconPath>Tutor/ProgressionLogo</iconPath>
+	<imageRatio>0.7</imageRatio>
+	<dimensions>(988, 620)</dimensions>
+	<orientationStyle>Center</orientationStyle>
+	<closeable>true</closeable>
+	<sound>ProgressionWelcome</sound>
+	<oneTime>true</oneTime>
+	<previousPopupDef>ProgressionGameStartPopup6</previousPopupDef>
+	<saveToClient>true</saveToClient>
+	<trigger>None</trigger>
+</PopupFramework.PopupDef>
+
+
+
+
+
+<!-- MOD OPTIONS -->
+
+	<PopupFramework.PopupDef>
+		<defName>ProgressionModOptionsPopup</defName>
+		<title>Configs are already applied!</title>
+		<description>
+&lt;b&gt;Checking whether the modpack settings are applied?&lt;/b&gt;\n\n
+If you&#39;re seeing this popup, then everything is already set up correctly, the modpack wouldn&#39;t have finished booting otherwise.\n\n
+If you ever want to reset everything back to defaults, simply delete RimWorld&#39;s &lt;b&gt;Config&lt;/b&gt; folder. Other than that, feel free to tweak any settings here to your liking.
+		</description>
+		<iconPath>Tutor/ConfigsApplied</iconPath>
+		<dimensions>(860, 400)</dimensions>
+		<orientationStyle>Right</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<customButtonLabel>Get help</customButtonLabel>
+		<customButtonWebLink>https://discord.gg/b58NcrzxRS</customButtonWebLink>
+		<saveToClient>true</saveToClient>
+		<trigger>OnModOptions</trigger>
+		<sound>ProgressionPopup</sound>
+	</PopupFramework.PopupDef>
+
+
+
+<!-- 'NEW COLONY' BUTTON -->
+<PopupFramework.PopupDef>
+	<defName>ProgressionNewColony</defName>
+	<title>Starting technology</title>
+	<description>
+&lt;size=22&gt;&lt;b&gt;Choosing your start&lt;/b&gt;&lt;/size&gt;
+\n\n
+&lt;size=15&gt;You&#39;re about to select a scenario for a new colony. Your first major decision is your &lt;b&gt;starting technology&lt;/b&gt; — the tech level your journey begins in.&lt;/size&gt;
+\n\n
+&lt;size=15&gt;If you&#39;re prone to &lt;b&gt;choice paralysis&lt;/b&gt;, starting in the &lt;b&gt;Animal / Neolithic&lt;/b&gt; era is highly recommended. Fewer systems, fewer decisions, and a smoother ramp into the modpack.&lt;/size&gt;
+\n\n
+&lt;size=15&gt;If you want access to many options immediately and enjoy juggling complexity, feel free to start in the &lt;b&gt;Medieval&lt;/b&gt; era or beyond.&lt;/size&gt;
+\n\n
+&lt;size=16&gt;&lt;b&gt;Once you're in-game, you can progress upward through the tech eras and see them all. There&#39;s no wrong choice, and you can always start fresh whenever you'd like.&lt;/b&gt;&lt;/size&gt;
+	</description>
+	<iconPath>Tutor/TechLevels</iconPath>
+	<dimensions>(980, 620)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<closeable>false</closeable>
+	<oneTime>true</oneTime>
+	<saveToClient>true</saveToClient>
+	<trigger>OnNewColonyButton</trigger>
+	<sound>ProgressionPopup</sound>
+	<nextPopupDef>ProgressionDifficultyCommitment</nextPopupDef>
+	<!-- <imageRatio>0.7</imageRatio> -->
+</PopupFramework.PopupDef>
+
+<PopupFramework.PopupDef>
+	<defName>ProgressionDifficultyCommitment</defName>
+	<title>Difficulty and commitment mode</title>
+	<description>
+&lt;size=22&gt;&lt;b&gt;This is a baseline challenging experience.&lt;/b&gt;&lt;/size&gt;
+\n
+&lt;size=15&gt;Higher difficulty settings often encourage &lt;b&gt;degenerative or exploitative playstyles&lt;/b&gt;, such as killboxing or wealth exploits especially in a modpack of this scale and complexity.&lt;/size&gt;
+\n
+&lt;size=15&gt;If your goal is to focus on &lt;b&gt;narrative, experimentation, and the systems of the modpack&lt;/b&gt;, consider playing on an &lt;b&gt;easier difficulty&lt;/b&gt; than you might normally choose.&lt;/size&gt;
+\n
+&lt;size=22&gt;&lt;b&gt;Reccomended save setting&lt;/b&gt;&lt;/size&gt;
+&lt;size=15&gt;Playing with &lt;b&gt;'Reload anytime mode'&lt;/b&gt; is strongly recommended. With 1000+ mods, occasional updates or edge cases can destabilize saves, and having the ability to reload acts as a practical safety net.&lt;/size&gt;
+&lt;size=15&gt;If you prefer the tension of not reloading out of bad situations, that experience can still exist, it just relies on &lt;b&gt;self-imposed narrative discipline&lt;/b&gt; rather than enforced restrictions.&lt;/size&gt;
+\n
+&lt;size=16&gt;&lt;b&gt;Choose the settings that support the story you want to tell.&lt;/b&gt;&lt;/size&gt;
+	</description>
+	<iconPath>Tutor/Difficulty</iconPath>
+	<dimensions>(980, 620)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<closeable>true</closeable>
+	<oneTime>true</oneTime>
+	<saveToClient>true</saveToClient>
+	<sound>ProgressionPopup</sound>
+	<previousPopupDef>ProgressionNewColony</previousPopupDef>
+	<trigger>None</trigger>
+</PopupFramework.PopupDef>
+
+
+
+
+
+
+
+<!-- COLONY START -->
+
+
+	<PopupFramework.PopupDef>
+		<defName>ProgressionColonyStartPopup1</defName>
+		<title>Note on intended playstyle</title>
+		<description>
+&lt;b&gt;Note: This is an experience about narrative.&lt;/b&gt;
+While there is no wrong way to play RimWorld, this modpack is &lt;i&gt;not&lt;/i&gt; designed around min-max or optimizing play. It isn&#39;t something to be conquered, it&#39;s meant to be used as a tool for narrative exploration.
+\nThere is no single &quot;best way&quot; to do anything here. There are simply too many paths, systems, and outcomes for that to exist.
+Go with what feels right to you, and to the story you&#39;re trying to tell.
+		</description>
+		<iconPath>Tutor/Narrative</iconPath>
+		<dimensions>(700, 450)</dimensions>
+		<orientationStyle>Right</orientationStyle>
+		<!-- <customButtonLabel>Get help</customButtonLabel>
+		<customButtonWebLink>https://discord.gg/b58NcrzxRS</customButtonWebLink> -->
+		<closeable>false</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<nextPopupDef>ProgressionColonyStarDifficultyStorytellers</nextPopupDef>
+		<!-- <nextPopupDef>ProgressionColonyStartPopup3</nextPopupDef> -->
+		<trigger>OnColonyStartup</trigger>
+		<sound>ProgressionPopup</sound>
+	</PopupFramework.PopupDef>
+
+<PopupFramework.PopupDef>
+	<defName>ProgressionColonyStarDifficultyStorytellers</defName>
+	<title>Changing aspects mid-game</title>
+	<description>
+&lt;size=18&gt;&lt;b&gt;Change difficulty or storyteller anytime&lt;/b&gt;&lt;/size&gt;
+&lt;size=14&gt;If the game ever feels like it&#39;s pulling you out of the moment, whether due to difficulty or the storyteller you chose, you can freely change both &lt;b&gt;mid-game&lt;/b&gt;.&lt;/size&gt;
+\n\n
+&lt;size=14&gt;To do this, open &lt;b&gt;Options&lt;/b&gt;, go to &lt;b&gt;Gameplay&lt;/b&gt;, and click &lt;b&gt;Modify&lt;/b&gt; on the storyteller settings. From there, you can adjust difficulty, storyteller behavior, or swap storytellers entirely.&lt;/size&gt;
+\n
+&lt;size=16&gt;&lt;b&gt;Set it to whatever keeps you in sync with the game.&lt;/b&gt;&lt;/size&gt;
+	</description>
+	<iconPath>Tutor/Storyteller</iconPath>
+	<dimensions>(700, 450)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<closeable>false</closeable>
+	<oneTime>true</oneTime>
+	<saveToClient>true</saveToClient>
+	<previousPopupDef>ProgressionColonyStartPopup1</previousPopupDef>
+	<nextPopupDef>ProgressionColonyStartEnd</nextPopupDef>
+	<trigger>OnColonyStartup</trigger>
+	<sound>ProgressionPopup</sound>
+</PopupFramework.PopupDef>
+
+<PopupFramework.PopupDef>
+	<defName>ProgressionColonyStartEnd</defName>
+	<title>Enjoy the game.</title>
+	<description>
+&lt;size=18&gt;&lt;b&gt;You&#39;re good to go.&lt;/b&gt;&lt;/size&gt;
+\n
+The project is designed to feel cohesive and intentional, but feedback plays a huge role in how it continues to improve.
+If you have any questions, bug reports, or general feedback (even something as small as a typo) please don&#39;t hesitate to share it.
+There&#39;s a large, friendly community ready to help. Ask anything, anytime.
+Enjoy your story, and come tell us about it afterward!
+	</description>
+	<iconPath>Tutor/ProgressionLogo</iconPath>
+	<dimensions>(700, 450)</dimensions>
+	<orientationStyle>Right</orientationStyle>
+	<customButtonLabel>Join the discord</customButtonLabel>
+	<customButtonWebLink>https://discord.gg/b58NcrzxRS</customButtonWebLink>
+	<closeable>true</closeable>
+	<oneTime>true</oneTime>
+	<saveToClient>true</saveToClient>
+	<previousPopupDef>ProgressionColonyStarDifficultyStorytellers</previousPopupDef>
+	<sound>ProgressionPopup</sound>
+</PopupFramework.PopupDef>
+<!-- 
+	<PopupFramework.PopupDef>
+		<defName>ProgressionColonyStartPopup2</defName>
+		<title>This is a story</title>
+		<description>This is a game about narrative. While there is no wrong way to play Rimworld, this modpack is not designed around min-max style play. It is not to be conquered, it is to be used as a narrative exploration tool. There is no "best way" of doing anything, as there are far too many options for you to choose from. Just go with what feels right to you and the story you are trying to tell.</description>
+		<iconPath>Tutor/ProgressionLogoGlowing</iconPath>
+		<dimensions>(590, 450)</dimensions>
+		<orientationStyle>Right</orientationStyle>
+		<customButtonLabel>Get support in the Discord</customButtonLabel>
+		<customButtonWebLink>https://discord.gg/b58NcrzxRS</customButtonWebLink>
+		<closeable>true</closeable>
+		<oneTime>false</oneTime>
+		<saveToClient>true</saveToClient>
+		<nextPopupDef>ProgressionGameStartPopup2</nextPopupDef>
+		<trigger>OnColonyStartup</trigger>
+	</PopupFramework.PopupDef>
+ -->
+
+
+
+
+
+
+
+	<!-- <PopupFramework.PopupDef>
+		<defName>NewColonyPopup</defName>
+		<title>New Colony Selection!</title>
+		<description>You are selecting a scenario to start a new game. Choose from various starting conditions and challenges for your colonists.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(400, 300)</dimensions>
+		<orientationStyle>Left</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>OnNewColonyButton</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>ModsPopup</defName>
+		<title>Mods Available!</title>
+		<description>You can enhance your gameplay experience with mods. Browse and install mods to customize your RimWorld experience.</description>
+		<iconPath>bigtest</iconPath>
+		<dimensions>(1200, 500)</dimensions>
+		<orientationStyle>Right</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>false</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>OnModsButton</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>OptionsPopup</defName>
+		<title>Options Changed!</title>
+		<description>Adjust your game settings to optimize your RimWorld experience. Changes take effect immediately.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(450, 250)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>false</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>OnOptionsButton</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>CreateWorldPopup</defName>
+		<title>World Configuration</title>
+		<description>You are configuring world parameters. Adjust settings to create a world that matches your preferred playstyle.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<customButtonLabel>Next</customButtonLabel>
+		<customButtonPopupDefLink>CreateWorldPopup2</customButtonPopupDefLink>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>OnCreateWorld</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>CreateWorldPopup2</defName>
+		<title>World Configuration</title>
+		<description>Continue configuring your world settings. You can adjust parameters such as world size, temperature, rainfall, and more.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<customButtonLabel>Back</customButtonLabel>
+		<customButtonPopupDefLink>CreateWorldPopup</customButtonPopupDefLink>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>WorldPresetPopup</defName>
+		<title>World Preset Selected</title>
+		<description>Your world preset has been selected. This determines the size, difficulty, and characteristics of your world.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<nextPopupDef>WorldPresetPopup2</nextPopupDef>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>false</saveToClient>
+		<trigger>OnWorldPreset</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>WorldPresetPopup2</defName>
+		<title>World Preset Confirmation</title>
+		<description>Your world settings are ready. Confirm to generate your new world where your colonists will live and die.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<previousPopupDef>WorldPresetPopup</previousPopupDef>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>false</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>ElectricityPopup</defName>
+		<title>Electricity Unlocked!</title>
+		<description>You have researched electricity! Build generators, lights, and powered buildings to advance your colony.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<customButtonLabel>Learn More</customButtonLabel>
+		<customButtonWebLink>https://github.com/fernyrepos/Popup-Framework</customButtonWebLink>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>false</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>MachiningPopup</defName>
+		<title>Machining Unlocked!</title>
+		<description>You have learned machining! Craft superior weapons, tools, and mechanoid parts at machining tables.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(400, 300)</dimensions>
+		<orientationStyle>Left</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>MicroelectronicsBasicsPopup</defName>
+		<title>Microelectronics Unlocked!</title>
+		<description>You have mastered microelectronics basics! Build advanced electronics, components, and high-tech devices.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(400, 300)</dimensions>
+		<orientationStyle>Right</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>RaidPopup</defName>
+		<title>Raid Incoming!</title>
+		<description>Hostile forces are approaching! Prepare defenses and protect your colonists and resources.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(450, 250)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>false</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>TraderPopup</defName>
+		<title>Trader Arrived!</title>
+		<description>A trading caravan has arrived. Exchange goods and resources with visiting merchants.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<customButtonLabel>Next</customButtonLabel>
+		<customButtonPopupDefLink>TraderPopup2</customButtonPopupDefLink>
+		<nextPopupDef>TraderPopup2</nextPopupDef>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>TraderPopup2</defName>
+		<title>Trader Information</title>
+		<description>Explore trade opportunities with visiting caravans. Good deals can help your colony prosper.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<customButtonLabel>Back</customButtonLabel>
+		<customButtonPopupDefLink>TraderPopup</customButtonPopupDefLink>
+		<previousPopupDef>TraderPopup</previousPopupDef>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>ArchitectPopup</defName>
+		<title>Architect Menu</title>
+		<description>Design and plan your colony layout. Efficient planning leads to a thriving, organized settlement.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<nextPopupDef>ArchitectPopup2</nextPopupDef>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>false</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>ArchitectPopup2</defName>
+		<title>Architect Menu Continued</title>
+		<description>Plan your construction projects carefully. Proper organization ensures efficient resource usage and worker productivity.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<previousPopupDef>ArchitectPopup</previousPopupDef>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>false</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>ElephantPopup</defName>
+		<title>Elephant Spotted!</title>
+		<description>A massive elephant has been sighted. These creatures are generally peaceful but can be dangerous if threatened.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(800, 600)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>false</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>MuffaloPopup</defName>
+		<title>Muffalo Spotted!</title>
+		<description>You've encountered muffalos. These docile creatures can be tamed for meat, leather, and milk.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(300, 200)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>false</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>WorkPopup</defName>
+		<title>Work Menu</title>
+		<description>Assign work priorities to your colonists. Efficient work distribution is crucial for colony success.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>false</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>CrashlandedPopup</defName>
+		<title>Crashlanded Scenario</title>
+		<description>You have selected the Crashlanded scenario. Your colonists will start after a crash-landing with limited supplies and immediate survival needs.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<customButtonLabel>Continue</customButtonLabel>
+		<customButtonPopupDefLink>SurvivalBasicsPopup</customButtonPopupDefLink>
+		<nextPopupDef>SurvivalBasicsPopup</nextPopupDef>
+		<closeable>false</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef>
+
+	<PopupFramework.PopupDef>
+		<defName>SurvivalBasicsPopup</defName>
+		<title>Survival Basics</title>
+		<description>In the Crashlanded scenario, your colonists will face immediate survival challenges. Focus on securing food, shelter, and medical care to keep everyone alive.</description>
+		<iconPath>Things/Item/Drug/Beer/Beer_a</iconPath>
+		<dimensions>(500, 300)</dimensions>
+		<orientationStyle>Center</orientationStyle>
+		<closeable>true</closeable>
+		<oneTime>true</oneTime>
+		<saveToClient>true</saveToClient>
+		<trigger>None</trigger>
+	</PopupFramework.PopupDef> -->
+
+</Defs>
